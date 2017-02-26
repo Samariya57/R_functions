@@ -1,0 +1,20 @@
+#Library (dplyr)
+##select() 
+Select some columns with conditions from data.
+
+select(data, column1:column5)
+
+##filter()
+Filter rows with conditions
+filter(data, column1==5)
+
+##arrange()
+Sort data 
+arrange(data, column1, desc(column2))
+
+##mutate() 
+Add a new column to data
+
+mutate(data, column2=column1+5)
+
+##summarize()
