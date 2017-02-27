@@ -49,3 +49,12 @@ result3 <-
   ) %>%
   filter(countries > 60) %>%
   arrange(desc(countries), avg_bytes)
+
+#library(lubridate)
+##today()
+year(), day(), month()
+##wday()
+wday(this_day, label=TRUE)
+##now()
+hour(), minute(), and second()
+ymd(), dmy(), hms(), ymd_hms()
