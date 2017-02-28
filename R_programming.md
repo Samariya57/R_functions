@@ -58,3 +58,14 @@ wday(this_day, label=TRUE)
 ##now()
 hour(), minute(), and second()
 ymd(), dmy(), hms(), ymd_hms()
+
+#Graphs
+##summary()
+##boxplot(data$column, col="blue")
+abline(h=12)- horisontal line at level 12
+abline(v=12, lwd=2) - vertical
+boxplot(column1~column2, data=data, col="")
+##barplot(table(data$column), col="", main="")
+##hist(data$column, col="blue", breaks=100)
+##with(polution, plot(latitude, pm25, col=column3))
+##rug(data$column)
