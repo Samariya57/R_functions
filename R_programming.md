@@ -69,3 +69,5 @@ boxplot(column1~column2, data=data, col="")
 ##hist(data$column, col="blue", breaks=100)
 ##with(polution, plot(latitude, pm25, col=column3))
 ##rug(data$column)
+
+cityVehiclesNEI$fips <- factor(cityVehiclesNEI$fips, labels = c("California", "Baltimore"))
