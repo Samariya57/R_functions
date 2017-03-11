@@ -71,3 +71,6 @@ boxplot(column1~column2, data=data, col="")
 ##rug(data$column)
 
 cityVehiclesNEI$fips <- factor(cityVehiclesNEI$fips, labels = c("California", "Baltimore"))
+
+
+sd(apply(matrix(rpois(10000,4),1000),1,mean))
