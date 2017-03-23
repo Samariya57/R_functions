@@ -35,3 +35,8 @@ dev.off() - close your device
 
 dev.cur() - current devices
 dev.copy (png, file="myfile.png")
+
+
+require(graphics)  
+coplot(len ~ dose | supp, data = ToothGrowth, panel = panel.smooth,
+       xlab = "ToothGrowth data: length vs dose, given type of supplement")
