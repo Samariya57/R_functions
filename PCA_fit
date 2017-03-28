@@ -1,0 +1,7 @@
+
+preProc10<- preProcess(res[,-13], method="pca", pcaComp = 10)
+trainPC10<- predict(preProc10,res[,-13])
+trainPC10$outcome<-res$outcome
+fit10<-train(outcome~.,method="glm",data=trainPC10)
+testPC10<-predict(preProc10,res_test[,-13])
+confusionMatrix(res_test$outcome, predict(fit10,testPC10))
